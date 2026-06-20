@@ -1,5 +1,4 @@
-# Ocultar la clave secreta de la API de TMDB
-js/config.js
+
 
 # Ocultar carpetas de configuración del editor (opcional)
 .vscode/
