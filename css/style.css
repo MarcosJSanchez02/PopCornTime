@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: #ffffff;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #e50914;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.buscador-contenedor {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.buscador-contenedor input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 2px solid #333;
+  background-color: #222;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.buscador-contenedor input:focus {
+  border-color: #e50914;
+}
+
+.grid-peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pelicula-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.pelicula-card:hover {
+  transform: translateY(-10px);
+}
+
+.pelicula-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  background-color: #2a2a2a;
+}
+
+.pelicula-info {
+  padding: 15px;
+}
+
+.pelicula-info h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  background-color: #333;
+  color: #ffc107;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.mensaje-estado {
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / -1;
+  padding: 40px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
